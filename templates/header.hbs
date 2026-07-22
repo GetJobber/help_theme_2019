@@ -1,12 +1,10 @@
 <header class="header">
   <div class="container header__inner">
     <div class="logo">
-      {{#link 'help_center' class="logo__link noshadow"}}
-        <img class="logo__image" src="{{ asset 'jobber_logo.svg'}}" alt="{{t 'home_page' name=help_center.name}}"> 
-      {{/link}}
-      <span class="logo__text">
-        Help Center
-      </span>
+      <a class="logo__link noshadow" href="https://www.getjobber.com">
+        <img class="logo__image" src="{{ asset 'jobber_logo.svg'}}" alt="Jobber">
+      </a>
+      {{#link 'help_center' class="logo__text noshadow"}}Help Center Home{{/link}}
     </div>
     <div class="nav-wrapper">
       <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
@@ -15,7 +13,6 @@
         </svg>
       </button>
       <nav class="user-nav" id="user-nav">
-        <a class="user-nav__link" href="https://help.getjobber.com/hc/en-us">Home</a>
         <a class="button button--ghost user-nav__link" href="javascript:Intercom('showNewMessage');" role="button">Chat Now</a>
       </nav>
     </div>
